@@ -1,9 +1,9 @@
 ---
 sidebar_label : Datatypes
-sidebar_position : 5
+sidebar_position : 3
 ---
 
-# Data Types in Squig
+# Data Types
 
 Squig supports various data types to represent different kinds of values in your programs. Understanding these data types is crucial for effective programming. Let's explore the primary data types in Squig.
 
@@ -40,14 +40,14 @@ let isCodingFun : true
 ```
 
 
-# Collections in Squig
+# Collections
 Squig provides a diverse set of collections to help you organize and manage data efficiently. Here are the primary collection types in Squig:
 
 :::note
 In Squig, the current collection offerings include arrays for ordered lists of elements and maps for key-value pairs.
 :::
 
-## 1. Array
+#### 1. Array
 Arrays are ordered collections of elements, allowing for random access using index values.
 
 ```squig
@@ -55,11 +55,10 @@ let myArray : {1, 2, 3, 4, 5}
 let thirdElement : myArray[2]  # Accessing the third element (3)
 ```
 
-## 2. Map
+#### 2. Map
 A map is a collection of key-value pairs, allowing elements to be accessed by both index values and key values.
 ```squig
 let myMap : {"name" : "squig" , "version" : "0.0.0"}
 ```
-
 
 These are the basic data types in Squig.  Understanding the characteristics and use cases of each data type will empower you to write expressive and efficient Squig code. Happy coding!

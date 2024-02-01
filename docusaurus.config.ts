@@ -8,15 +8,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://squig-doc.vercel.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'squig', // Usually your GitHub org/user name.
-  projectName: 'squig-docs', // Usually your repo name.
+  organizationName: 'squig-docusaurus', // Usually your GitHub org/user name.
+  projectName: 'squig-docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Harish-M-2003/Squig',
+            'https://github.com/Harish-M-2003/Squig-Docusaurus',
         },
         // blog: {
         //   showReadingTime: true,
@@ -60,10 +60,10 @@ const config: Config = {
     navbar: {
       title: 'Squig',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'logo',
         src: 'img/logo_2_bw.png',
         // height : 0,
-        width : 40
+        // width : 40
       },
       items: [
         {

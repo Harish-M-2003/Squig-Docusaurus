@@ -1,6 +1,6 @@
 ---
 sidebar_label : Variables
-sidebar_position : 4
+sidebar_position : 2
 ---
 
 # Variables
@@ -13,14 +13,17 @@ In Squig, you declare variables using the `let` keyword:
 
 ```squig
 # Integer
+
 let age : 25
 
 # String
+
 let name : "Squig"
 let name : "John" # This would likely result in a redeclaration error
 
 
 # Boolean
+
 let isCodingFun : true
 ```
 
@@ -48,15 +51,13 @@ if true {
 print(insideIf)  # This will result in an error as 'insideIf' is not accessible here
 ``` -->
 
-## Mutable Variables
+<!-- ## Mutable Variables
 
-If you need to change the value of a variable, use the `var` keyword:
+If you need to change the value of a variable, use the `let` keyword:
 
 ```squig
 let count : 1
 count : count + 1
-```
-
-The `var` keyword allows you to reassign values to the variable.
+``` -->
 
 Understanding how to declare and use variables is fundamental to Squig programming. As you progress, these concepts will form the building blocks for creating dynamic and expressive Squig programs. Happy coding!

@@ -2,10 +2,7 @@
 sidebar_label : "Introduction"
 sidebar_position: 1
 ---
-# Squig 
-
-## Introduction
-
+# Introduction
 Welcome to Squig, a programming language that goes beyond the ordinary, providing additional options in the realm of minimalism and performance exploration. Crafted with a modern mindset and a commitment to innovation, Squig acknowledges its unique position in the coding landscape.
 
 

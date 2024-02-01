@@ -22,7 +22,8 @@ Let's create a simple "Hello, World!" program to familiarize yourself with Squig
    In your `hello.squig` file, enter the following code:
 
    ```squig
-   // hello.squig
+   # hello.squig
+   
    log "Hello, World!"
    ```
 

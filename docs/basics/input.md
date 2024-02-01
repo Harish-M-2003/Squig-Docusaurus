@@ -1,6 +1,6 @@
 ---
 sidebar_label : User input
-sidebar_position : 6
+sidebar_position : 5
 ---
 
 # User Input
@@ -11,10 +11,14 @@ Squig simplifies user input by automatically detecting the input type, allowing 
 
 ```squig
 # Receive user input for a number
+
 let userNumber : 'Enter a number: '
+log type userNumber 
 
 # Receive user input for text
+
 let userText : 'Enter some text: '
+log type userText
 ```
 
 In the example above, Squig dynamically detects the type of user input based on the context. Whether the user enters a number, or a text Squig adapts to the provided input.
@@ -25,14 +29,17 @@ Once you've captured user input, you can use it in your program as needed:
 
 ```squig
 # Use the user's number in a calculation
+
 let squaredNumber : userNumber * userNumber
 log "The square of your number is: " + squaredNumber
 
 # Concatenate user text
+
 let greeting : "Hello, " + userText + "!"
 log greeting
 
 # Make decisions based on user choice
+
 if { userChoice } : {
     log  "You chose true!"
 } else : {

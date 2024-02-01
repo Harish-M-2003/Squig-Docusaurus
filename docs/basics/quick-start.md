@@ -1,6 +1,6 @@
 ---
-sidebar_label : Basics
-sidebar_position : 3
+sidebar_label : Quick start
+sidebar_position : 1
 ---
 # Language Basics
 
@@ -29,17 +29,17 @@ Squig is dynamically typed, allowing you to assign values to variables without e
 Squig's syntax is designed for simplicity and clarity. Here's a quick overview of some basic syntax elements:
 
 
-# Comments
+### Comments
 ```squig
 # This is a single-line comment
 ```
 
-# Print to the console
+### Print to the console
 ```squig
 log "Hello, Squig!"
 ```
 
-# String concatenation
+### String concatenation
 ```squig
 let greeting : "Hello"
 let subject : "Squig"
