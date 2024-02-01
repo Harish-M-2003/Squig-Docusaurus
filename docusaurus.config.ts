@@ -38,7 +38,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Harish-M-2003/Squig-Docusaurus',
+            'https://github.com/Harish-M-2003/Squig-Docusaurus/tree/main',
         },
         // blog: {
         //   showReadingTime: true,
