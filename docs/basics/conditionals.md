@@ -60,7 +60,7 @@ if { condition1 } : {
 The `switch` statement provides an efficient way to handle multiple possible conditions. It compares the value of an expression against various cases and executes the corresponding block of code.
 
 ```squig
-switch { expression } : 
+switch { expression } : {
 
     case value1: {
 
@@ -80,6 +80,8 @@ switch { expression } :
         // Code to execute if none of the cases match
 
     }
+
+}
 
 ```
 
