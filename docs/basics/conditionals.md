@@ -3,7 +3,7 @@ sidebar_label : Conditionals
 sidebar_position : 7
 ---
 
-# Conditional Statements and Loops in Squig
+# Conditional Statements and Loops
 
 Squig provides a variety of control flow statements to facilitate decision-making and iterative processes in your code. Here are the key features: `if`, `if-else`, `if-elif-else`, `switch`, and `for` loop.
 
