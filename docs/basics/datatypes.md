@@ -43,7 +43,7 @@ let isCodingFun : true
 # Collections
 Squig provides a diverse set of collections to help you organize and manage data efficiently. Here are the primary collection types in Squig:
 
-:::note
+:::info
 In Squig, the current collection offerings include arrays for ordered lists of elements and maps for key-value pairs.
 :::
 

@@ -5,9 +5,6 @@
  */
 
 /* You can override the default Infima variables here. */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   --ifm-color-primary: #007acc; /* Change to your desired shade of blue */
@@ -19,10 +16,13 @@
   --ifm-color-primary-lightest: #00b3ff;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  background-color: white;
+
 }
 
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme='dark']{
   --ifm-color-primary: #007acc; /* Retain the same blue shade */
   --ifm-color-primary-dark: #006699;
   --ifm-color-primary-darker: #005580;
@@ -30,6 +30,21 @@
   --ifm-color-primary-light: #0088cc; /* Adjusted to a lighter shade */
   --ifm-color-primary-lighter: #0099e6; /* Adjusted to a lighter shade */
   --ifm-color-primary-lightest: #00b3ff; /* Adjusted to a lighter shade */
+  background-color: #030712;
+
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.2); /* Improved visibility for highlighted code lines */
 }
 
+[data-theme='dark'] nav , 
+[data-theme='dark'] footer 
+{
+  background-color: #030712;
+}
+
+[data-theme='dark'] a.card {
+  background-color: rgb(11, 13, 23);
+}
+[data-theme='dark'] code {
+  background-color: rgb(11, 13, 23);
+}

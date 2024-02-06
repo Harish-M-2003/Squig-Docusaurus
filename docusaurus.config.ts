@@ -12,6 +12,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -40,13 +41,6 @@ const config: Config = {
           editUrl:
             'https://github.com/Harish-M-2003/Squig-Docusaurus/tree/main/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -55,6 +49,7 @@ const config: Config = {
   ],
 
   themeConfig: {
+    
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
@@ -65,6 +60,7 @@ const config: Config = {
         // height : 0,
         // width : 40
       },
+      
       items: [
         {
           type: 'docSidebar',
@@ -81,7 +77,7 @@ const config: Config = {
       ],
     },
     footer: {
-      // style: 'dark',
+      
       links: [
         {
           title: 'Docs',
@@ -90,25 +86,29 @@ const config: Config = {
               label: 'Introduction',
               to: '/docs/intro',
             },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            // {
-            //   label: 'Stack Overflow',
-            //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            // },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Installation',
+              to: '/docs/getting-started/installation',
             },
-            // {
-            //   label: 'Twitter',
-            //   href: 'https://twitter.com/docusaurus',
-            // },
           ],
         },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     // {
+        //     //   label: 'Stack Overflow',
+        //     //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //     // },
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discordapp.com/invite/docusaurus',
+        //     },
+        //     // {
+        //     //   label: 'Twitter',
+        //     //   href: 'https://twitter.com/docusaurus',
+        //     // },
+        //   ],
+        // },
         {
           title: 'More',
           items: [
@@ -118,7 +118,7 @@ const config: Config = {
             // },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Harish-M-2003/Squig',
             },
           ],
         },

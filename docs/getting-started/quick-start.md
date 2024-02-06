@@ -16,7 +16,7 @@ Start by downloading and installing Squig on your machine. Follow the steps outl
 Let's create a simple "Hello, World!" program to familiarize yourself with Squig.
 
 1. **Create a New File:**
-   Open your text editor and create a new file. Save it with a ".sq" extension (e.g., `hello.squig`).
+   Open your text editor and create a new file. Save it with a ".squig" extension (e.g., `hello.squig`).
 
 2. **Write Your Squig Code:**
    In your `hello.squig` file, enter the following code:
@@ -28,7 +28,7 @@ Let's create a simple "Hello, World!" program to familiarize yourself with Squig
    ```
 
 3. **Run Your Squig Program:**
-   Open a terminal and navigate to the directory containing your `hello.sq` file. Run the following command:
+   Open a terminal and navigate to the directory containing your `hello.squig` file. Run the following command:
 
    ```bash
    squig hello.squig

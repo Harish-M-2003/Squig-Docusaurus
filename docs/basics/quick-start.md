@@ -2,7 +2,7 @@
 sidebar_label : Quick start
 sidebar_position : 1
 ---
-# Language Basics
+# Basics
 
 Now that you've had a taste of Squig with our quick start guide, let's delve into the language basics. Understanding these foundational concepts will pave the way for more complex and powerful Squig programming.
 
