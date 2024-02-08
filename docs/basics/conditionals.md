@@ -7,6 +7,10 @@ sidebar_position : 7
 
 Squig provides a variety of control flow statements to facilitate decision-making and iterative processes in your code. Here are the key features: `if`, `if-else`, `if-elif-else`, `switch`, and `for` loop.
 
+:::warning
+Please make sure you have closed the braces correctly , and have included colons
+:::
+
 ## 1. if Statement
 
 The `if` statement is used for simple conditional branching. It executes a block of code only if the specified condition evaluates to true.

@@ -48,3 +48,10 @@
 [data-theme='dark'] code {
   background-color: rgb(11, 13, 23);
 }
+[data-theme='dark'] .navbar-sidebar {
+  background-color: #030712;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

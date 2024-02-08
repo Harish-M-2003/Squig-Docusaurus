@@ -16,6 +16,10 @@ file reference: "filename"
 
 This loads the file named "filename" in read mode by default.
 
+:::warning
+Please make sure that you use double quotes around you filename.
+:::
+
 #### Example:
 
 ```squig
