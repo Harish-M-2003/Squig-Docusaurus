@@ -3,7 +3,7 @@
     "position": 4,
     "link": {
       "type": "generated-index",
-      "description": "Basics that you need to know inorder to work with squig"
+      "description": "Welcome to the developer documentation for Squig! This guide provides information for developers interested in contributing to the Squig project. Whether you're interested in extending the language features, improving performance, or fixing bugs, this documentation will help you get started."
     }
   }
   
