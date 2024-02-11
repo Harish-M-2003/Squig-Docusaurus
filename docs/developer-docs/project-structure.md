@@ -17,11 +17,11 @@ The Squig project is organized into several modules, each responsible for a spec
 
 ## Contributing Guidelines
 
-Before contributing to Squig, please read our [Contributing Guidelines](link-to-contributing-guidelines). These guidelines outline the process for submitting bug reports, feature requests, and code contributions.
+Before contributing to Squig, please read our [Contributing Guidelines](#). These guidelines outline the process for submitting bug reports, feature requests, and code contributions.
 
 ## Setting Up the Development Environment
 
-To set up your development environment for Squig, follow the steps outlined in the [Development Environment Setup Guide](link-to-dev-environment-setup-guide). This guide covers setting up dependencies, installing development tools, and configuring your environment for Squig development.
+To set up your development environment for Squig, follow the steps outlined in the [Development Environment Setup Guide](#). This guide covers setting up dependencies, installing development tools, and configuring your environment for Squig development.
 
 ## Module Overview
 
