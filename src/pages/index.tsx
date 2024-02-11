@@ -20,7 +20,7 @@ function HomepageHeader() {
           <p>Squig: Alpha Unleashed, Code the Unknown.</p>
           {/* >Squig: Code Less, Create More – Where Simplicity Meets Infinite Possibilities */}
         </Heading>
-        <main className="flex-1">
+        <main className="flex-1 bg-red-500">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">

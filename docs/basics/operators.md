@@ -18,15 +18,15 @@ Arithmetic operators are used to perform basic mathematical operations.
 
 ### Example
 
-```squig
+```javascript
 let a : 10
 let b : 3
 
-let sum : a + b        # 13
-let difference : a - b  # 7
-let product : a * b     # 30
-let quotient : a / b    # 3.333...
-let remainder : a % b   # 1
+let sum : a + b        // 13
+let difference : a - b  // 7
+let product : a * b     // 30
+let quotient : a / b    // 3.333...
+let remainder : a % b   // 1
 ```
 
 ## 2. Comparison Operators
@@ -42,16 +42,16 @@ Comparison operators are used to compare two values.
 
 ### Example
 
-```squig
+```javascript
 let x : 5
 let y : 10
 
-log x = y    # false
-log x != y    # true
-log x > y     # false
-log x < y     # true
-log x >= y    # false
-log x <= y    # true
+log x = y    //false
+log x != y    // true
+log x > y     // false
+log x < y     // true
+log x >= y    // false
+log x <= y    // true
 ```
 
 ## 3. Logical Operators
@@ -64,13 +64,13 @@ Logical operators are used to perform logical operations.
 
 ### Example
 
-```squig
+```javascript
 let isTrue : true
 let isFalse : false
 
-log isTrue & isFalse  # false
-log isTrue | isFalse  # true
-log !isTrue           # false
+log isTrue & isFalse  // false
+log isTrue | isFalse  // true
+log !isTrue           // false
 ```
 
 ## 4. Assignment Operators
@@ -85,7 +85,7 @@ Assignment operators are used to assign values to variables.
 
 ### Example
 
-```squig
+```js
 let num : 5
 
 num :+ 2  # num is now 7

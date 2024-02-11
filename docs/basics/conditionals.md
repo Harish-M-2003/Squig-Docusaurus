@@ -8,7 +8,7 @@ sidebar_position : 7
 Squig provides a variety of control flow statements to facilitate decision-making and iterative processes in your code. Here are the key features: `if`, `if-else`, `if-elif-else`, `switch`, and `for` loop.
 
 :::warning
-Please make sure you have closed the braces correctly , and have included colons
+Please make sure you have closed the braces correctly and included colons.
 :::
 
 ## 1. if Statement
@@ -18,7 +18,7 @@ The `if` statement is used for simple conditional branching. It executes a block
 ```squig
 if { condition } : {
 
-    // Code to execute if the condition is true
+    # Code to execute if the condition is true
 
 }
 ```
@@ -27,14 +27,14 @@ if { condition } : {
 
 The `if-else` statement extends the `if` statement by providing an alternative block of code to execute if the condition is false.
 
-```squig
+```python
 if { condition } : {
-
-    // Code to execute if the condition is true
+    
+    # Code to execute if the condition is true
 
 } else : {
 
-    // Code to execute if the condition is false
+    # Code to execute if the condition is false
 
 }
 ```
@@ -43,18 +43,18 @@ if { condition } : {
 
 The `if-elif-else` statement is an extension of the `if-else` statement that allows for multiple conditions to be checked sequentially.
 
-```squig
+```python
 if { condition1 } : {
 
-    // Code to execute if condition1 is true
+    # Code to execute if condition1 is true
 
 } elif { condition2 } : {
 
-    // Code to execute if condition2 is true
+    # Code to execute if condition2 is true
 
 } else : {
 
-    // Code to execute if none of the conditions are true
+    # Code to execute if none of the conditions are true
 
 }
 ```
@@ -63,7 +63,7 @@ if { condition1 } : {
 
 The `switch` statement provides an efficient way to handle multiple possible conditions. It compares the value of an expression against various cases and executes the corresponding block of code.
 
-```squig
+```javascript
 switch { expression } : {
 
     case value1: {
