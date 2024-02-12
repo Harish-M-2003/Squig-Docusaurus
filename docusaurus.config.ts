@@ -70,7 +70,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/Harish-M-2003/Squig',
+          href: 'https://github.com/Harish-M-2003/Squig-Docusaurus',
           label: 'GitHub',
           position: 'right',
         },
@@ -89,6 +89,18 @@ const config: Config = {
             {
               label: 'Installation',
               to: '/docs/getting-started/installation',
+            },
+            {
+              label: 'Basics',
+              to: '/docs/category/basics',
+            },
+            {
+              label: 'Object oriented programming',
+              to: '/docs/category/oops',
+            },
+            {
+              label: 'Developer docs',
+              to: '/docs/category/developer-docs',
             },
           ],
         },
@@ -119,6 +131,10 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/Harish-M-2003/Squig',
+            },
+            {
+              label: 'Linkedin',
+              href: '#',
             },
           ],
         },

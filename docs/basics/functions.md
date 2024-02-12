@@ -11,9 +11,9 @@ Functions in Squig allow you to encapsulate reusable pieces of code, making your
 
 To declare a function, use the `function` keyword .
 
-```squig
+```js
 add function { a, b } : {
-    return a + b
+    log a + b
 }
 ```
 
@@ -23,7 +23,7 @@ In this example, the function `add` takes two parameters of type integer and ret
 
 To use a function, call it with the required arguments.
 
-```squig
+```js
 let result : add{ 3, 5 }
 ```
 

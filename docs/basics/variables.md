@@ -5,24 +5,21 @@ sidebar_position : 2
 
 # Variables
 
-Variables in Squig are essential for storing and managing data. They are dynamically typed, allowing flexibility in assigning values without explicit type declarations. Let's explore the basics of variables in Squig.
+A variable in programming is a symbolic name or identifier that represents a storage location in computer memory. It holds a value that can be changed or modified during the execution of a program. Variables play a fundamental role in programming, allowing developers to store, manipulate, and retrieve data efficiently.
+
+
+In summary, variables serve as fundamental building blocks in programming, enabling the storage and manipulation of data values within a program. They provide flexibility, modularity, and abstraction, essential for implementing various algorithms, data structures, and software applications.
+
+<!-- Variables in Squig are essential for storing and managing data. They are dynamically typed, allowing flexibility in assigning values without explicit type declarations. Let's explore the basics of variables in Squig. -->
 
 ## Variable Declaration
 
 In Squig, you declare variables using the `let` keyword:
 
-```squig
-# Integer
-
+```js
 let age : 25
 
-# String
-
 let name : "Squig"
-let name : "John" # This would likely result in a redeclaration error
-
-
-# Boolean
 
 let isCodingFun : true
 ```
@@ -33,9 +30,9 @@ Here, we have created variables for an integer (`age`), a string (`name`), and a
 
 Squig is dynamically typed, meaning you don't need to explicitly declare the variable type. The language infers the type based on the assigned value.
 
-```squig
-let dynamicVar : 3.14  # This can be a float
-dynamicVar : "Squig"  # Now it becomes a string
+```js
+let dynamicVar : 3.14  
+dynamicVar : "Squig" 
 ```
 
 <!-- ## Variable Scope

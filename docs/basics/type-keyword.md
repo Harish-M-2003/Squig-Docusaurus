@@ -9,7 +9,7 @@ The `type` keyword in Squig is used to provide insight into the data types at ru
 
 ## Syntax
 
-```squig
+```python
 type expression
 ```
 
@@ -41,3 +41,27 @@ In the example above, the `type` keyword is used to inspect the data type of var
 The `type` keyword in Squig empowers developers with dynamic type-checking capabilities, fostering a more flexible and resilient coding experience. By incorporating this keyword judiciously, you can write code that gracefully adapts to varying data types, promoting cleaner and more maintainable solutions.
 
 --- -->
+
+
+<!-- 
+Type checking is a process performed by a programming language compiler or interpreter to verify that the operations and manipulations performed on data values are compatible with their respective data types. It ensures that operations are applied to data of appropriate types, preventing errors and inconsistencies in program execution.
+
+Here's an explanation of type checking:
+
+1. **Verification of Data Types**: Type checking involves examining the data types of variables, expressions, and values used in a program to ensure they conform to the expected types.
+
+2. **Compile-Time and Run-Time Checking**: Type checking can occur either at compile time or at run time, depending on the programming language and its implementation.
+
+   - **Compile-Time Type Checking**: In languages with static typing, type checking is performed during compilation. The compiler analyzes the code and ensures that all operations are valid based on the declared types of variables and expressions.
+   
+   - **Run-Time Type Checking**: In languages with dynamic typing, type checking may occur during program execution. The interpreter checks the types of values as operations are performed and raises errors if incompatible types are encountered.
+
+3. **Prevention of Type Errors**: Type checking helps prevent type-related errors such as type mismatches, type conversions, and invalid operations on data values. It enforces type safety and promotes code correctness.
+
+4. **Enhanced Program Reliability**: By enforcing type correctness, type checking improves the reliability and robustness of programs, reducing the likelihood of runtime errors and unexpected behavior.
+
+5. **Optimization Opportunities**: Type checking also enables compiler optimizations by allowing the compiler to generate more efficient code tailored to specific data types and operations.
+
+6. **Facilitation of Refactoring and Maintenance**: Type-checked code is easier to refactor and maintain since the compiler provides feedback on type-related issues, allowing developers to identify and resolve them early in the development process.
+
+Overall, type checking plays a vital role in ensuring the integrity and correctness of programs by enforcing consistency in data types and operations throughout the codebase. It is a fundamental aspect of static and dynamic typing paradigms in programming languages.  -->
