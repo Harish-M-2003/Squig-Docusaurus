@@ -1,106 +1,109 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+"use client";
+import { useScroll, useTransform } from "framer-motion";
+import React from "react";
+import { GoogleGeminiEffect } from "../components/ui/google-gemini-effect";
 // @ts-ignore
-// import Logo from "../../static/img/logo_2_bw.png"; 
+import Background from "../../static/img/bg.jpg";
+import { HoverEffect } from "../components/ui/hover-cards";
+import { IoLogoGithub } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
 
-import styles from './index.module.css';
+export default function Home() {
+  const ref = React.useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
 
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const features = [
+    {
+      title: "Introduction",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Getting Started",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Installation",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Basics",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Object Oriented Programming",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Developer Documentation",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+  ];
+
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+
   return (
-    <header className={clsx(styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {/* {siteConfig.title} */}
-          {/* <img src={Logo}/> */}
-          <p>Squig: Alpha Unleashed, Code the Unknown.</p>
-          {/* >Squig: Code Less, Create More – Where Simplicity Meets Infinite Possibilities */}
-        </Heading>
-        <main className="flex-1 bg-red-500">
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Squig Programming Language</h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Squig is a modern programming language designed for simplicity and productivity.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Link
-                  className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                  href="#"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300"
-                  href="#"
-                >
-                  Tour the Language
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Code Example</h2>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Here's a simple code example to get you started.
-                </p>
-              </div>
-              <div className="w-full max-w-lg rounded-lg border border-gray-200 border-gray-200 bg-white p-6 shadow-sm dark:border-gray-800 dark:border-gray-800 dark:bg-gray-950">
-                <pre className="text-sm text-gray-900 dark:text-gray-50">
-                  {`findLetter function {string , target , index} : { 
-
-  if {index >= length{string}} : { 
-    log "not found";
-  } 
-                    elif {string[index] = target } : { # This is a elif statement
-                            log "found"
-                    } 
-                    else : {
-                      findLetter{string , target ,  index + 1};
-                    }
-
-                    }`}
-                </pre>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-        {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-        {/* <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div> */}
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
+    <div>
       
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+      <div
+        className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+        ref={ref}
+      >
+      <img src={Background} className="fixed top-0 blur-sm"/>
+      <div className="flex justify-between px-5 pt-5 z-10">
+        <a target="_blank" className="text-white" href="/docs/intro">Docs</a>
+        <div className="flex gap-5">
+
+        <a target="_blank" href="https://github.com/Harish-M-2003/Squig" className="text-gray-200 hover:opacity-[0.5] hover:text-gray-200">
+
+        <IoLogoGithub className="text-4xl"/>
+        </a>
+        <a target="_blank" href="https://github.com/Harish-M-2003/Squig" className="text-gray-200 hover:opacity-[0.5] hover:text-gray-200">
+
+        <FaLinkedin className="text-4xl"/>
+        </a>
+
+        </div>
+      </div>
+        <GoogleGeminiEffect
+          pathLengths={[
+            pathLengthFirst,
+            pathLengthSecond,
+            pathLengthThird,
+            pathLengthFourth,
+            pathLengthFifth,
+          ]}
+          title="Squig"
+          description="Crafting tomorrow's code with redefined syntax: Enter the world of Squig."
+        />
+      </div>
+      <div className="h-screen py-10 backdrop-blur bg-transparent">
+        {/* <div className="flex justify-center text-6xl">
+        <p>About</p>
+      </div> */}
+        <HoverEffect items={features} />
+      </div>
+      <div className="text-center">
+         <p>Made By Harish M.</p>
+      </div>
+    </div>
   );
 }
