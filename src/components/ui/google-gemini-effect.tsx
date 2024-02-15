@@ -3,6 +3,8 @@ import React from "react";
 import { cn } from "@site/src/utils/cn";
 import { Button } from "./moving-border";
 import { TextGenerateEffect } from "./text-generate";
+import { IoLogoGithub } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
 
 const transition = {
   duration: 0,
@@ -34,21 +36,20 @@ export const GoogleGeminiEffect = ({
       <div className="w-full h-[890px] -top-80 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
         
         
-        {/* <Button
+        {/* {/* <Button
           borderRadius="1.75rem"
           duration={0.5}
           className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
         >
             Download
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           borderRadius="1.75rem"
           duration={0.5}
           className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
         >
             Documentation
-        </Button>
-         */}
+        </Button> */}
       </div>
       <svg
         // width="1440"

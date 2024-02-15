@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   motion,
@@ -7,9 +8,8 @@ import {
   useTransform,
 } from "framer-motion";
 import { useRef } from "react";
-import { cn } from "@site/src/utils/cn";
 // import { cn } from "@/utils/cn";
-
+import { cn } from "@site/src/utils/cn";
 
 export function Button({
   borderRadius = "1.75rem",

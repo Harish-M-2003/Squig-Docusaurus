@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import { IoLogoGithub } from 'react-icons/io5';
+import { FaLinkedin } from 'react-icons/fa';
 
 type FeatureItem = {
   title: string;
@@ -63,6 +65,22 @@ export default function HomepageFeatures(): JSX.Element {
           {/* {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))} */}
+          <div className="flex justify-between px-5 pt-5">
+        <a target="_blank" className="text-white" href="/docs/intro">Docs</a>
+        <div className="flex gap-5">
+
+        <a target="_blank" href="https://github.com/Harish-M-2003/Squig" className="text-gray-200 hover:opacity-[0.5] hover:text-gray-200">
+
+        <IoLogoGithub className="text-4xl"/>
+        </a>
+        <a target="_blank" href="https://github.com/Harish-M-2003/Squig" className="text-gray-200 hover:opacity-[0.5] hover:text-gray-200">
+
+        <FaLinkedin className="text-4xl"/>
+        </a>
+
+        </div>
+      </div>
+      
         </div>
       </div>
     </section>
