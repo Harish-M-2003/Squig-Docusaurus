@@ -7,7 +7,6 @@ import Background from "../../static/img/bg.jpg";
 import { HoverEffect } from "../components/ui/hover-cards";
 import HomepageFeatures from "../components/HomepageFeatures";
 
-
 export default function Home() {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
@@ -30,20 +29,17 @@ export default function Home() {
     },
     {
       title: "Installation",
-      description:
-        "Get Squig Up and Running in No Time.",
-      link: "/docs/category/getting-started",
+      description: "Get Squig Up and Running in No Time.",
+      link: "/docs/getting-started/installation",
     },
     {
       title: "Basics",
-      description:
-        "Master the Fundamentals: Dive Into Squig's Core Concepts.",
+      description: "Master the Fundamentals: Dive Into Squig's Core Concepts.",
       link: "/docs/category/basics",
     },
     {
       title: "Object Oriented Programming",
-      description:
-        "Elevate Your Code: Harness the Power of Objects in Squig.",
+      description: "Elevate Your Code: Harness the Power of Objects in Squig.",
       link: "/docs/category/oops",
     },
     {
@@ -61,14 +57,16 @@ export default function Home() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
 
   return (
-    <div>
-      {/* <HomepageFeatures/> */}
+    <div className="relative">
+      <HomepageFeatures/>
       <div
         className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
         ref={ref}
       >
-      
-      <img src={Background} className="fixed top-0 left-0 blur-sm"/>
+      <img
+        src={Background}
+        className="fixed top-0  max-md:hidden bottom-0 blur-sm"
+      />
         <GoogleGeminiEffect
           pathLengths={[
             pathLengthFirst,
@@ -77,10 +75,12 @@ export default function Home() {
             pathLengthFourth,
             pathLengthFifth,
           ]}
-          title="Squig"
+          title="SQUIG"
+          className="h-screen z-10"
           description="Crafting tomorrow's code with redefined syntax: Enter the world of Squig."
           // description="Unleash Your Code's Potential: Squig - Where Syntax Meets Innovation."
-          />
+        />
+        
       </div>
       <div className="h-screen py-10 backdrop-blur bg-transparent">
         {/* <div className="flex justify-center text-6xl">
@@ -89,7 +89,7 @@ export default function Home() {
         <HoverEffect items={features} />
       </div>
       <div className="text-center">
-         <p>Made By Harish M.</p>
+        <p className="text-white">Made By Harish M.</p>
       </div>
     </div>
   );
