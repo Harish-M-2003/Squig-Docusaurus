@@ -14,22 +14,22 @@ The Interpreter class defines methods to traverse the AST nodes and execute the 
 ### Methods:
 
 - **`interpret(self, node)`**: Interprets the AST node and executes the corresponding task.
-- **`interpret_statement(self, node)`**: Interprets a statement node in the AST.
-- **`interpret_expression(self, node)`**: Interprets an expression node in the AST.
-- **`interpret_relational_expression(self, node)`**: Interprets a relational expression node.
-- **`interpret_arithmetic_expression(self, node)`**: Interprets an arithmetic expression node.
-- **`interpret_term(self, node)`**: Interprets a term node in an arithmetic expression.
-- **`interpret_factor(self, node)`**: Interprets a factor node in an arithmetic expression.
-- **`interpret_power(self, node)`**: Interprets a power expression node.
-- **`interpret_call(self, node)`**: Interprets a function call node.
-- **`interpret_atom(self, node)`**: Interprets an atomic expression node.
-- **`interpret_variable(self, node)`**: Interprets a variable node.
-- **`interpret_collection_statement(self, node)`**: Interprets a collection statement node.
-- **`interpret_if_statement(self, node)`**: Interprets an if statement node.
-- **`interpret_for_loop_statement(self, node)`**: Interprets a for loop statement node.
-- **`interpret_function_statement(self, node)`**: Interprets a function statement node.
-- **`interpret_file_statement(self, node)`**: Interprets a file statement node.
-- **`interpret_switch_statement(self, node)`**: Interprets a switch statement node.
+- **`statement(self, node)`**: Interprets a statement node in the AST.
+- **`expression(self, node)`**: Interprets an expression node in the AST.
+- **`relational_expression(self, node)`**: Interprets a relational expression node.
+- **`arithmetic_expression(self, node)`**: Interprets an arithmetic expression node.
+- **`term(self, node)`**: Interprets a term node in an arithmetic expression.
+- **`factor(self, node)`**: Interprets a factor node in an arithmetic expression.
+- **`power(self, node)`**: Interprets a power expression node.
+- **`call(self, node)`**: Interprets a function call node.
+- **`atom(self, node)`**: Interprets an atomic expression node.
+- **`variable(self, node)`**: Interprets a variable node.
+- **`collection_statement(self, node)`**: Interprets a collection statement node.
+- **`if_statement(self, node)`**: Interprets an if statement node.
+- **`for_loop_statement(self, node)`**: Interprets a for loop statement node.
+- **`function_statement(self, node)`**: Interprets a function statement node.
+- **`file_statement(self, node)`**: Interprets a file statement node.
+- **`switch_statement(self, node)`**: Interprets a switch statement node.
 
 ### Code Explanation:
 

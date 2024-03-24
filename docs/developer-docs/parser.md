@@ -26,22 +26,22 @@ The Squig grammar consists of various rules for defining expressions, statements
 
 ### Methods:
 
-- **`parse_statement(self)`**: Parses a single statement in the Squig program.
-- **`parse_expression(self)`**: Parses an expression according to the grammar rules.
-- **`parse_relational_expression(self)`**: Parses a relational expression, handling relational operators.
-- **`parse_arithmetic_expression(self)`**: Parses an arithmetic expression, handling arithmetic operations.
-- **`parse_term(self)`**: Parses a term in an arithmetic expression.
-- **`parse_factor(self)`**: Parses a factor in an arithmetic expression.
-- **`parse_power(self)`**: Parses a power expression, handling exponentiation.
-- **`parse_call(self)`**: Parses a function call expression.
-- **`parse_atom(self)`**: Parses an atomic expression.
-- **`parse_variable(self)`**: Parses a variable or variable expression.
-- **`parse_collection_statement(self)`**: Parses a collection statement.
-- **`parse_if_statement(self)`**: Parses an if statement.
-- **`parse_for_loop_statement(self)`**: Parses a for loop statement.
-- **`parse_function_statement(self)`**: Parses a function statement.
-- **`parse_file_statement(self)`**: Parses a file statement.
-- **`parse_switch_statement(self)`**: Parses a switch statement.
+- **`statement(self)`**: Parses a single statement in the Squig program.
+- **`expression(self)`**: Parses an expression according to the grammar rules.
+- **`relational_expression(self)`**: Parses a relational expression, handling relational operators.
+- **`arithmetic_expression(self)`**: Parses an arithmetic expression, handling arithmetic operations.
+- **`term(self)`**: Parses a term in an arithmetic expression.
+- **`factor(self)`**: Parses a factor in an arithmetic expression.
+- **`power(self)`**: Parses a power expression, handling exponentiation.
+- **`call(self)`**: Parses a function call expression.
+- **`atom(self)`**: Parses an atomic expression.
+- **`variable(self)`**: Parses a variable or variable expression.
+- **`collection_statement(self)`**: Parses a collection statement.
+- **`if_statement(self)`**: Parses an if statement.
+- **`for_loop_statement(self)`**: Parses a for loop statement.
+- **`function_statement(self)`**: Parses a function statement.
+- **`file_statement(self)`**: Parses a file statement.
+- **`switch_statement(self)`**: Parses a switch statement.
 
 ### Code Explanation:
 

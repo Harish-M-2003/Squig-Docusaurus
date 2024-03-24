@@ -25,7 +25,7 @@ export default function Home() {
       title: "Getting Started",
       description:
         "A technology company that builds economic infrastructure for the internet.",
-      link: "/docs/getting-started",
+      link: "/docs/category/getting-started",
     },
     {
       title: "Installation",
