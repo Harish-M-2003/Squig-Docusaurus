@@ -97,10 +97,10 @@ const config: Config = {
               label: 'Basics',
               to: '/docs/category/basics',
             },
-            {
-              label: 'Object oriented programming',
-              to: '/docs/category/oops',
-            },
+            // {
+            //   label: 'Object oriented programming',
+            //   to: '/docs/category/oops',
+            // },
             {
               label: 'Developer docs',
               to: '/docs/category/developer-docs',
