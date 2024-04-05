@@ -33,7 +33,7 @@ export const GoogleGeminiEffect = ({
           `Scroll this component and see the bottom SVG come to life wow this
         works!`}
       </p> */}
-      <div className="w-full h-[890px] -top-80 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
+      <div className="w-full h-[890px] -top-80 md:-top-40  flex items-center justify-center bg-transparent absolute ">
         
         
         {/* {/* <Button

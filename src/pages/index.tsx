@@ -37,11 +37,11 @@ export default function Home() {
       description: "Master the Fundamentals: Dive Into Squig's Core Concepts.",
       link: "/docs/category/basics",
     },
-    {
-      title: "Object Oriented Programming",
-      description: "Elevate Your Code: Harness the Power of Objects in Squig.",
-      link: "/docs/category/oops",
-    },
+    // {
+    //   title: "Object Oriented Programming",
+    //   description: "Elevate Your Code: Harness the Power of Objects in Squig.",
+    //   link: "/docs/category/oops",
+    // },
     {
       title: "Developer Documentation",
       description:

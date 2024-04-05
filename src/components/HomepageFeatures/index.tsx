@@ -59,7 +59,7 @@ function Feature({title, Svg, description}: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className={"bg-red-500 z-10"}>
+    <section className={"z-10"}>
       <div className="container">
         <div className="row">
           {/* {FeatureList.map((props, idx) => (
