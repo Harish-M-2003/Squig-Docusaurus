@@ -29,13 +29,15 @@ Common built-in data types found in programming languages include:
 - **Boolean**: Represents true or false values.
 - **Array/List**: Represents collections of values of the same type.
 - **Map**: Represents collections of key-value pairs.
-- **Custom Objects/Classes**: Represents user-defined data structures with their own attributes and methods.
+<!-- - **Custom Objects/Classes**: Represents user-defined data structures with their own attributes and methods. -->
 
 Understanding data types is essential for writing correct and efficient programs, as it enables developers to select appropriate types for representing and manipulating data, ensuring compatibility and consistency throughout the codebase.
 
 Squig supports various data types to represent different kinds of values in your programs. Understanding these data types is crucial for effective programming. Let's explore the primary data types in Squig.
 
-## 1. Integer
+## Number Type: Integers and Floats
+
+In Squig, integers and floating-point numbers are both represented under the number type. This allows you to work with numeric values of varying precision in your programs.
 
 Integers represent whole numbers without any fractional or decimal part.
 
@@ -43,23 +45,36 @@ Integers represent whole numbers without any fractional or decimal part.
 let age : 25
 ```
 
-## 2. Float
-
 Floats represent numbers with a decimal point, allowing for fractional values.
 
 ```js
 let pi : 3.14
 ```
 
-## 3. String
+
+## String Type : Immutable
 
 Strings represent sequences of characters, such as text or words.
+In Squig, the String type is immutable, meaning that once a string is created, its value cannot be changed. This ensures that string values remain consistent and predictable throughout your program.
 
 ```js
 let message : "Hello, Squig!"
 ```
 
-## 4. Boolean
+## Mutable String Type:
+
+In Squig, a mutable string is represented by enclosing text between backticks `` ` ``. Unlike regular strings, mutable strings allow you to modify their contents after they've been created.
+
+### Declaration and Initialization
+
+You can declare and initialize a mutable string variable by enclosing text between backticks `` ` ``.
+
+Example:
+```squig
+let message : `Hello, world!`
+```
+
+## Boolean Type : 
 
 Booleans represent true or false values, often used for logical conditions.
 
@@ -67,26 +82,59 @@ Booleans represent true or false values, often used for logical conditions.
 let isCodingFun : true
 ```
 
+## Collection Type : 
 
-<!-- # Collections
-Squig provides a diverse set of collections to help you organize and manage data efficiently. Here are the primary collection types in Squig:
+In Squig, the Collection type allows you to work with sequences of elements, similar to lists in Python. These sequences can contain elements of any data type, and you can perform various operations on them, such as adding, removing, and accessing elements.
 
-:::info
-In Squig, the current collection offerings include arrays for ordered lists of elements and maps for key-value pairs.
-:::
+<!-- ### Declaration and Initialization
 
-#### 1. Array
-Arrays are ordered collections of elements, allowing for random access using index values.
+You can declare and initialize a Collection variable using square brackets `[]` and adding elements separated by commas. -->
 
+Example:
 ```squig
-let myArray : {1, 2, 3, 4, 5}
-let thirdElement : myArray[2]  # Accessing the third element (3)
+let fruits : {"apple", "banana", "orange"}
+let numbers : {1, 2, 3, 4, 5}
 ```
 
-#### 2. Map
-A map is a collection of key-value pairs, allowing elements to be accessed by both index values and key values.
-```squig
-let myMap : {"name" : "squig" , "version" : "0.0.0"}
-``` -->
+In this example, `fruits` and `numbers` are Collection variables containing strings and integers, respectively.
+<!-- 
+### Accessing Elements
 
-These are the basic data types in Squig.  Understanding the characteristics and use cases of each data type will empower you to write expressive and efficient Squig code. Happy coding!
+You can access individual elements in a Collection using square brackets `[]` and the index of the element you want to access. Indexing starts from 0.
+
+Example:
+```squig
+str first_fruit : fruits[0]
+num third_number : numbers[2]
+```
+
+In this example, `first_fruit` will contain `"apple"`, and `third_number` will contain `3`.
+
+### Operations
+
+You can perform various operations on Collections, such as adding and removing elements, getting the length of the Collection, and checking if an element exists.
+
+Example:
+```squig
+fruits.append("grape")
+numbers.remove(2)
+num length : fruits.length()
+bool has_banana : "banana" in fruits
+```
+
+In this example, `append() -->
+
+## Map Type : 
+
+In Squig, a Map is a collection of key-value pairs, allowing elements to be accessed by both index values and key values. Each element in a Map consists of a unique key and its corresponding value.
+
+<!-- ### Declaration and Initialization
+
+You can declare and initialize a Map variable using curly braces `{}` to define key-value pairs, separated by colons `:`. -->
+
+Example:
+```squig
+let myMap : {"name" : "Squig", "version" : "0.0.0"}
+```
+
+In this example, `myMap` is a Map variable containing two key-value pairs: `"name"` with the value `"Squig"` and `"version"` with the value `"0.0.0"`.

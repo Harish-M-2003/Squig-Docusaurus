@@ -11,7 +11,7 @@ Now that you've had a taste of Squig with our quick start guide, let's delve int
 In Squig, variables are used to store and manage data. Let's explore the basic data types and how to declare variables:
 
 ```squig
-# Integer
+# Number
 let age : 25
 
 # String
@@ -19,6 +19,9 @@ let name : "Squig"
 
 # Boolean
 let isCodingFun : true
+
+# Constant
+imu PI : 3.14159265359
 
 ```
 

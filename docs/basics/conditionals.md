@@ -23,8 +23,9 @@ Conditional and iterative statements are fundamental programming constructs that
 
 Squig provides a variety of control flow statements to facilitate decision-making and iterative processes in your code. Here are the key features: `if`, `if-else`, `if-elif-else`, `switch`, and `for` loop.
 
-:::warning
-Please make sure you have closed the braces correctly and included colons.
+:::warning Brace Closure and Colon Usage
+
+Check your braces {} and colons :! Incorrect usage could lead to bugs in your code. Keep it concise, keep it clean, and your Squig adventures will be smooth sailing.
 :::
 
 ## 1. if Statement
@@ -111,7 +112,13 @@ switch { expression } : {
 The `for` loop in Squig is used for iterating over a sequence (e.g., range of numbers) or elements in an array.
 
 ```squig
-for initializer{condition} : {
+for initializer{start , stop , step} : {
+
+    // Code to execute in each iteration
+
+}
+
+for initializer{sequence} : {
 
     // Code to execute in each iteration
 
@@ -119,13 +126,23 @@ for initializer{condition} : {
 ```
 
 - **initializer**: Executed once before the loop starts.
+- **start** and **step** are optional
 
 ### Example
 
-```squig
+```js
 for i{10} {
 
     log "Iteration " , i;
+    
+}
+
+
+let message : "Hello , world"
+
+for i{message} {
+
+    log i;
     
 }
 ```

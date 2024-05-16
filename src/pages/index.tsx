@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <HomepageFeatures/>
+      {/* <HomepageFeatures/>
       <div
         className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
         ref={ref}
@@ -83,14 +83,12 @@ export default function Home() {
         
       </div>
       <div className="h-screen py-10 backdrop-blur bg-transparent">
-        {/* <div className="flex justify-center text-6xl">
-        <p>About</p>
-      </div> */}
+        
         <HoverEffect items={features} />
       </div>
       <div className="text-center">
         <p className="text-white">Made By Harish M.</p>
-      </div>
+      </div> */}
     </div>
   );
 }

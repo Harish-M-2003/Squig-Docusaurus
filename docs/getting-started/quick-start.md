@@ -5,7 +5,7 @@ sidebar_position : 2
 
 
 # Quick Start
-Embark on your Squig journey! This quick start guide is your express ticket to diving into Squig and coding swiftly with ease.
+This quick start guide is your express ticket to diving into Squig and coding swiftly with ease.
 
 ## 1. Installation
 

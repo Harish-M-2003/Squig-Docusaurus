@@ -7,14 +7,21 @@ sidebar_position : 5
 
 User input refers to data provided by the user of a computer program during its execution. It allows users to interact with the program by entering information, making selections, or issuing commands through input devices such as keyboards, mice, touchscreens, or other input devices.
 
-Here's a breakdown of user input in programming:
+
+:::info Note Using Single Quotes for User Input
+
+When getting user input in Squig, remember to use single quotes ' ' around the prompt message. This ensures a smooth experience for your users without any interruptions.
+
+:::
+
+<!-- Here's a breakdown of user input in programming:
 
 1. **Interaction**: User input enables programs to respond to user actions and requests in real-time, creating an interactive experience. Users can provide input to control the behavior, flow, and functionality of the program.
 
 2. **Types of Input**: User input can take various forms, including:
    - **Text Input**: Entering textual information, such as names, addresses, messages, or commands, via keyboard input.
    - **Numeric Input**: Providing numerical data, such as integers, floating-point numbers, or mathematical expressions.
-   - **File Input**: Specifying files or file paths as input for file-related operations, such as reading, writing, or processing data from files.
+   - **File Input**: Specifying files or file paths as input for file-related operations, such as reading, writing, or processing data from files. -->
 
 Squig simplifies user input by automatically detecting the input type, allowing for a seamless and straightforward experience. Here's how you can capture user input:
 
@@ -39,17 +46,12 @@ In the example above, Squig dynamically detects the type of user input based on 
 Once you've captured user input, you can use it in your program as needed:
 
 ```js
-# Use the user's number in a calculation
 
 let squaredNumber : userNumber * userNumber
 log "The square of your number is: " + squaredNumber
 
-# Concatenate user text
-
 let greeting : "Hello, " + userText + "!"
 log greeting
-
-# Make decisions based on user choice
 
 if { userChoice } : {
     log  "You chose true!"

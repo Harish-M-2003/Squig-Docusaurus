@@ -7,6 +7,11 @@ sidebar_position : 7
 
 Functions in Squig allow you to encapsulate reusable pieces of code, making your programs modular and easier to manage. Here's an overview of creating and using functions in Squig.
 
+:::info Return Statement Coming Soon!
+
+At the moment, Squig doesn't support returning values from functions. But fear not! We're putting in the elbow grease to bring this feature to you soon. Your patience is appreciated, and we'll keep you posted on all the latest updates.
+:::
+
 ## 1. Function Declaration
 
 To declare a function, use the `function` keyword .

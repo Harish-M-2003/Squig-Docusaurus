@@ -2,7 +2,7 @@
 sidebar_label : Files
 sidebar_position : 9
 ---
-# File Handling
+# Files
 
 Squig provides simple and expressive syntax for handling files. This documentation covers reading and writing to files using Squig.
 
@@ -16,8 +16,8 @@ file reference: "filename"
 
 This loads the file named "filename" in read mode by default.
 
-:::warning
-Please make sure that you use double quotes around you filename.
+:::warning reminder
+ when specifying a filename, make sure to use double quotes " " around it. This ensures that your Squig code runs smoothly without any hiccups.
 :::
 
 #### Example:
