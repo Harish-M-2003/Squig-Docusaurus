@@ -1,88 +1,132 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
-import { IoLogoGithub } from 'react-icons/io5';
-import { FaLinkedin } from 'react-icons/fa';
+"use client";
+import { useScroll, useTransform } from "framer-motion";
+import React from "react";
+import { GoogleGeminiEffect } from "../ui/google-gemini-effect"
+// @ts-ignore
+import Background from "../../../static/img/bg.jpg";
+import { HoverEffect } from "../ui/hover-cards";
+import Editor from '@monaco-editor/react';
+import { useState } from "react";
+import axios from "axios";
+// import HomepageFeatures from "../HomepageFeatures";
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
-};
+export default function Home() {
 
-// const FeatureList: FeatureItem[] = [
-//   {
-//     title: 'Easy to Use',
-//     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-//     description: (
-//       <>
-//         Docusaurus was designed from the ground up to be easily installed and
-//         used to get your website up and running quickly.
-//       </>
-//     ),
-//   },
-//   {
-//     title: 'Focus on What Matters',
-//     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-//     description: (
-//       <>
-//         Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-//         ahead and move your docs into the <code>docs</code> directory.
-//       </>
-//     ),
-//   },
-//   {
-//     title: 'Powered by React',
-//     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-//     description: (
-//       <>
-//         Extend or customize your website layout by reusing React. Docusaurus can
-//         be extended while reusing the same header and footer.
-//       </>
-//     ),
-//   },
-// ];
+  const [sourceProgram, setSourceProgram] = useState("");
+  const [output, setOutput] = useState("");
+  const [disableRunBtn , setDisableRunBtn] = useState(false);
 
-function Feature({title, Svg, description}: FeatureItem) {
+  const ref = React.useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const features = [
+    {
+      title: "Introduction",
+      description:
+        "Dive into Squig: Where Syntax Unleashes Infinite Potential.",
+      link: "/docs/intro",
+    },
+    {
+      title: "Getting Started",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "/docs/category/getting-started",
+    },
+    {
+      title: "Installation",
+      description: "Get Squig Up and Running in No Time.",
+      link: "/docs/getting-started/installation",
+    },
+    {
+      title: "Basics",
+      description: "Master the Fundamentals: Dive Into Squig's Core Concepts.",
+      link: "/docs/category/basics",
+    },
+    // {
+    //   title: "Object Oriented Programming",
+    //   description: "Elevate Your Code: Harness the Power of Objects in Squig.",
+    //   link: "/docs/category/oops",
+    // },
+    {
+      title: "Developer Documentation",
+      description:
+        "Unveil the Secrets: Dive Deep into Squig's Developer Documentation.",
+      link: "/docs/category/developer-docs",
+    },
+  ];
+
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+
+  function handleEditorChange(value: string, event: any) {
+    setSourceProgram(value)
+  }
+
+  async function runCode() {
+    // console.log(sourceProgram)
+    setDisableRunBtn(() => true);
+    const result = await axios.post("https://HarishM2003.pythonanywhere.com/playground", { code: sourceProgram });
+    // console.log(result.data)
+    setDisableRunBtn(() => false)
+
+    setOutput(result.data.output)
+  }
+
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className="">
+      {/* <HomepageFeatures/> */}
+      <div
+        className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+        ref={ref}
+      >
+        <img
+          src={Background}
+          className="fixed top-0  max-md:hidden bottom-0 blur-sm"
+        />
+        <GoogleGeminiEffect
+          pathLengths={[
+            pathLengthFirst,
+            pathLengthSecond,
+            pathLengthThird,
+            pathLengthFourth,
+            pathLengthFifth,
+          ]}
+          title="SQUIG"
+          className="h-screen z-1"
+          description="Crafting tomorrow's code with redefined syntax: Enter the world of Squig."
+        // description="Unleash Your Code's Potential: Squig - Where Syntax Meets Innovation."
+        />
+
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className="h-screen py-10 backdrop-blur bg-transparent">
+        {/* <div className="flex justify-center text-6xl">
+        <p>About</p>
+      </div> */}
+        <HoverEffect items={features} />
+      </div>
+      <div className="h-screen p-10 px-20 w-screen relative md:block hidden">
+        <div className="flex">
+
+          <Editor height="80vh" theme="vs-dark" defaultValue="# Type Your Code Here" onChange={handleEditorChange} />
+
+          <div className="bg-[#1e1e1e] w-full p-5">
+            <p >{output}</p>
+          </div>
+        </div>
+        <div className="w-full flex justify-end mt-5">
+          <button className="p-2 px-10 rounded m-2 bg-gradient-to-r from-blue-700 to-blue-500" disabled={disableRunBtn} onClick={runCode}>Run</button>
+        </div>
+
+      </div>
+      <div className="text-center p-6">
+        <p className="text-white">Made By Harish M.</p>
       </div>
     </div>
-  );
-}
-
-export default function HomepageFeatures(): JSX.Element {
-  return (
-    <section className={"z-10"}>
-      <div className="container">
-        <div className="row">
-          {/* {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))} */}
-          <div className="flex justify-between px-5 pt-5">
-        <a target="_blank" className="text-white" href="/docs/intro">Docs</a>
-        <div className="flex gap-5">
-
-        <a target="_blank" href="https://github.com/Harish-M-2003/Squig" className="text-gray-200 hover:opacity-[0.5] hover:text-gray-200">
-
-        <IoLogoGithub className="text-4xl"/>
-        </a>
-        <a target="_blank" href="https://github.com/Harish-M-2003/Squig" className="text-gray-200 hover:opacity-[0.5] hover:text-gray-200">
-
-        <FaLinkedin className="text-4xl"/>
-        </a>
-
-        </div>
-      </div>
-      
-        </div>
-      </div>
-    </section>
   );
 }

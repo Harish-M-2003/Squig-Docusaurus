@@ -12,6 +12,7 @@ The Squig project is organized into several modules, each responsible for a spec
 - `Token.py`: Module defining token types used by the lexer.
 - `Types.py`: Module defining Squig data types and type checking logic.
 - `Node.py`: Module defining nodes used in the AST representation.
+- `SymbolTable.py`: Module which contain all the built in functions and stores all global variables.
 - `Error.py`: Module defining error types and handling logic.
 - `Position.py`: Module defining position tracking for error reporting.
 

@@ -5,6 +5,8 @@
  @tailwind base;
  @tailwind components;
  @tailwind utilities;
+
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
  
 .heroBanner {
   padding: 4rem 0;
@@ -23,4 +25,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.orbitron-text {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  color : red;
+  font-style: normal;
 }

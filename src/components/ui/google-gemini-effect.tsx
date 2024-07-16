@@ -1,7 +1,7 @@
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 import { cn } from "@site/src/utils/cn";
-import { Button } from "./moving-border";
+// import { Button } from "./moving-border";
 import { TextGenerateEffect } from "./text-generate";
 import { IoLogoGithub } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
@@ -27,7 +27,10 @@ export const GoogleGeminiEffect = ({
       <p className="text-lg md:text-[10rem] pt-10 pb-4 text-center h-[10rem] bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `Build with Aceternity UI`}
       </p>
-      <TextGenerateEffect words={description} className="text-xs md:text-2xl font-normal text-center text-gray-500 text-neutral-400 mt-4 max-w-lg mx-auto"/>
+      {/* <TextGenerateEffect words={description} className="text-xs md:text-2xl font-normal text-center text-white text-neutral-400 mt-4 max-w-lg mx-auto"/> */}
+      <p  className="text-xs md:text-2xl font-normal text-center text-gray-500 text-neutral-400 mt-4 max-w-lg mx-auto">
+        {description}
+      </p>
       {/* <p className=>
         {description ||
           `Scroll this component and see the bottom SVG come to life wow this
