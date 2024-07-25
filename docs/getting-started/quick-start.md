@@ -9,7 +9,7 @@ This quick start guide is your express ticket to diving into Squig and coding sw
 
 ## 1. Installation
 
-Start by downloading and installing Squig on your machine. Follow the steps outlined in the [Installation Guide](/docs/getting-started/installation) for your operating system.
+Start by downloading and installing Squig on your machine. Follow the steps outlined in the [Installation Guide](/getting-started/installation) for your operating system.
 
 ## 2. Hello, World!
 
@@ -42,6 +42,6 @@ Let's create a simple "Hello, World!" program to familiarize yourself with Squig
 
 ## 3. Explore and Experiment
 
-Now that you've successfully run your first Squig program, it's time to explore more features. Check out the [Documentation](/docs/intro) for detailed information on Squig's syntax, features, and examples.
+Now that you've successfully run your first Squig program, it's time to explore more features. Check out the [Documentation](/) for detailed information on Squig's syntax, features, and examples.
 
 <!-- Feel free to experiment and enjoy coding with Squig! If you have any questions or need assistance, join our [Community]() for support and discussions. Happy coding! -->

@@ -35,9 +35,11 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
+      // 'classic',
       {
         docs: {
+          routeBasePath : '/',
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -87,15 +89,15 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/intro',
+              to: '/',
             },
             {
               label: 'Installation',
-              to: '/docs/getting-started/installation',
+              to: '/getting-started/installation',
             },
             {
               label: 'Basics',
-              to: '/docs/category/basics',
+              to: '/category/basics',
             },
             // {
             //   label: 'Object oriented programming',
@@ -103,7 +105,7 @@ const config: Config = {
             // },
             {
               label: 'Developer docs',
-              to: '/docs/category/developer-docs',
+              to: '/category/developer-docs',
             },
           ],
         },
